@@ -1,1 +1,130 @@
-PaperSearchQA website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT9FF3T80V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZT9FF3T80V');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #ffffff;
+            --bg-alt: #f9fafb;
+            --border: #e5e7eb;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.25rem; margin: 2rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        h3 { font-size: 1rem; margin: 1.25rem 0 0.5rem; color: var(--text-light); }
+        p { margin-bottom: 1rem; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .venue { color: var(--text-light); font-size: 1.1rem; margin-bottom: 1rem; }
+        .authors { color: var(--text-light); margin-bottom: 1.5rem; }
+        .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        .links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.5rem 1rem;
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        .links a:hover { background: var(--border); text-decoration: none; }
+        .tldr { background: var(--bg-alt); padding: 1.25rem; border-radius: 8px; margin-bottom: 2rem; }
+        .figure { margin: 1.5rem 0; }
+        .figure img { width: 100%; border-radius: 8px; }
+        .figure-caption { font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem; }
+        .results-summary { background: var(--bg-alt); padding: 1rem 1.25rem; border-radius: 8px; margin: 1rem 0; }
+        .bibtex { background: var(--bg-alt); padding: 1rem; border-radius: 6px; font-family: monospace; font-size: 0.85rem; overflow-x: auto; white-space: pre; }
+        footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <h1>PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR</h1>
+    <p class="venue">EACL 2026 (European Chapter of the Association for Computational Linguistics)</p>
+    <p class="authors">
+        <a href="https://jmhb0.github.io">James Burgess</a>, <a href="https://bsky.app/profile/hansenjn.bsky.social">Jan Niklas Hansen</a>, <a href="https://duopeng.github.io/">Duo Peng</a>, <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang</a>, <a href="https://alejandro-lozano-dev.github.io/alejandro/">Alejandro Lozano</a>, <a href="https://minwoosun.github.io/">Min Woo Sun</a>, <a href="https://lundberglab.stanford.edu">Emma Lundberg</a>, <a href="https://ai.stanford.edu/~syyeung/">Serena Yeung-Levy</a>
+    </p>
+
+    <div class="links">
+        <a href="https://arxiv.org/abs/2601.18207">Paper</a>
+        <a href="https://github.com/jmhb0/PaperSearchQA">Code</a>
+        <a href="https://huggingface.co/collections/jmhb/papersearchqa">Dataset</a>
+    </div>
+
+    <div class="tldr">
+        We provide an environment for training search agents over scientific literature using reinforcement learning with verifiable rewards (RLVR). We release a corpus of <strong>16 million biomedical abstracts</strong>, a <strong>60k QA dataset</strong>, and benchmarks &mdash; all compatible with the Search-R1 codebase. Our data creation methods are scalable and easily extendable to other scientific domains.
+    </div>
+
+    <h2>Search Agents</h2>
+    <p>
+        Search agents are LLMs that interleave reasoning and retrieval to answer questions. Rather than relying on fixed retrieval pipelines, they learn search strategies through RL, supervised only on final answer correctness. This capability is essential for building AI systems that can autonomously navigate and reason over scientific literature.
+    </p>
+    <div class="figure">
+        <img src="assets/papersearchqa-fig1horizontal-search-agent.png" alt="Overview of a search agent interleaving reasoning and retrieval">
+    </div>
+
+    <h2>What We Release</h2>
+
+    <h3>Artifacts</h3>
+    <p>We release an RLVR training environment for scientific paper QA:</p>
+    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <li><strong>Training dataset:</strong> 60k factoid QA pairs</li>
+        <li><strong>Retrieval corpus:</strong> 16M PubMed abstracts formatted for search</li>
+        <li><strong>Benchmarks:</strong> PaperSearchQA test set + reformatted BioASQ evaluation</li>
+        <li><strong>Code:</strong> Compatible with the Search-R1 codebase</li>
+    </ul>
+
+    <h3>Data Creation Pipeline</h3>
+    <p>We also release a generalizable data creation pipeline for constructing QA training data from paper abstracts. It requires only a corpus of abstracts and access to an LLM, plus domain expertise to define meaningful question categories, making it straightforward to build similar RLVR training environments for other scientific domains.</p>
+    <div class="figure">
+        <img src="assets/papersearchqa-fig3-datageneration.png" alt="Data generation pipeline">
+    </div>
+
+    <h2>Results</h2>
+    <div class="results-summary">
+        <p>RL-trained search agents (Search-R1) substantially outperform retrieval baselines. With Qwen2.5-7B: <strong>51.0%</strong> on PaperSearchQA vs 36.5% for RAG (+14.5 pts). Agents trained on PaperSearchQA also generalize to <a href="http://bioasq.org/">BioASQ</a>, a human-created biomedical QA benchmark: <strong>44.8%</strong> vs 29.7% for RAG (+15.1 pts). We release a reformatted version of <a href="http://bioasq.org/">BioASQ</a> compatible with the Search-R1 codebase.</p>
+    </div>
+
+    <h2>Learned Behaviors</h2>
+    <p>Through qualitative analysis of reasoning traces, we observe agents learning to plan searches, reason before retrieving, and verify their own knowledge:</p>
+    <div class="figure">
+        <img src="assets/papersearchqa-fig4-emergent-behaviour.png" alt="Three emergent agent behaviors observed in reasoning traces">
+    </div>
+
+    <h2>BibTeX</h2>
+    <pre class="bibtex">@misc{burgess2026papersearchqalearningsearchreason,
+      title={PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR},
+      author={James Burgess and Jan N. Hansen and Duo Peng and Yuhui Zhang and Alejandro Lozano and Min Woo Sun and Emma Lundberg and Serena Yeung-Levy},
+      year={2026},
+      eprint={2601.18207},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2601.18207},
+}</pre>
+
+    <footer>
+        Stanford University
+    </footer>
+</body>
+</html>
