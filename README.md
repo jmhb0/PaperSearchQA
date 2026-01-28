@@ -8,7 +8,7 @@
 
 **Paper**: [PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR](https://arxiv.org/abs/2601.18207)
 
-This repository includes a 60K biomedical Q&A dataset, a scalable data generation pipeline, and retrieval infrastructure compatible with [Search-R1](https://github.com/PeterGriffinJin/Search-R1).
+The paper's main contribution is RL training environments: a data generation pipeline for creating Q&As from scientific biomedical paper abstracts; and a retrieval corpus of paper abstracts. We train a search agent in this environment, and show that it generalizes to the [BioASQ](https://huggingface.co/datasets/jmhb/BioASQ) benchmark. The data-generation ideas should generalize to non-biomedical papers as well.
 
 - **`data_generation/`** - Scalable pipeline for generating Q&A pairs from scientific abstracts using GPT-4.1. Includes corpus processing, question generation, golden answer creation, and paraphrasing (~$150-230 for 60K examples).
 
