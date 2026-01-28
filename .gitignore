@@ -1,0 +1,107 @@
+obsidian/
+CLAUDE*
+**/cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+*_env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Data and outputs
+data/
+output/
+results/
+verl_checkpoints/
+checkpoints/
+
+# Caches
+cache/
+*.lmdb
+*.lmdb-lock
+
+# Logs
+*.log
+*.txt.log
+wandb/
+logs/
+
+# Large files
+*.parquet
+*.jsonl
+*.json.gz
+*.index
+*.pkl
+*.pt
+*.bin
+*.safetensors
+
+# Retrieval indices
+*_bm25/
+*_e5/
+*.index
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+obsidian/  # Obsidian vault symlink
+allMeSH_2022/  # Source data
+pubmed.jsonl
+*.parquet
+
+# Secrets
+.env
+*.key
+*.pem
+api_keys.txt
+
+# Data generation smoke test artifacts
+data_generation/*.log
+data_generation/smoke_test_env/
+data_generation/output/*minimal*
+data_generation/results/*minimal*
+data_generation/test_*.log

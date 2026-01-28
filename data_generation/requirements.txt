@@ -1,0 +1,23 @@
+# Data Generation Requirements
+
+# Core data processing
+datasets>=2.14.0
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=12.0.0
+huggingface-hub>=0.17.0
+
+# LLM API and caching
+openai>=1.0.0
+httpx>=0.24.0
+lmdb>=1.4.0
+filelock>=3.12.0
+
+# Utilities
+tqdm>=4.65.0
+chardet>=5.0.0
+Pillow>=10.0.0
+ijson>=3.2.0
+
+# Optional: for development/debugging
+ipdb>=0.13.0

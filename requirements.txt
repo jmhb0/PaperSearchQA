@@ -1,0 +1,29 @@
+# Core dependencies
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.14.0
+pandas>=1.5.0
+numpy>=1.24.0
+tqdm
+
+# Data generation
+openai>=1.0.0  # For OpenRouter API
+lmdb>=1.4.0    # LLM response caching
+
+# Retrieval
+pyserini>=0.21.0  # BM25 retrieval
+faiss-cpu>=1.7.4  # Dense retrieval (use faiss-gpu for GPU)
+sentence-transformers>=2.2.0  # E5 embeddings
+flask>=2.3.0  # Retrieval server
+
+# Inference and evaluation
+vllm>=0.3.0  # Fast LLM inference
+filelock  # Cache locking
+requests  # API calls
+
+# Optional: For training (requires Search-R1 setup)
+# ray>=2.0.0
+# wandb
+
+# Utilities
+ipdb  # Debugging

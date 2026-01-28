@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2025 PaperSearchQA Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Additional Licenses and Attributions:
+
+1. Search-R1 Components:
+   The retrieval infrastructure in search-r1/ is adapted from the Search-R1
+   project (https://github.com/PeterGriffinJin/Search-R1), which is licensed
+   under the Apache License 2.0.
+
+2. BioASQ Data:
+   The BioASQ test set requires registration at http://bioasq.org/ and is
+   subject to their terms of use. Users must obtain their own copy of the
+   BioASQ data.
+
+3. PubMed Data:
+   The PubMed corpus is derived from publicly available PubMed abstracts
+   provided by NCBI. Use of this data is subject to NCBI's terms of use.
+
+4. allMeSH Data:
+   The allMeSH dataset is from the BioASQ 2022 challenge. Users must comply
+   with BioASQ terms of use.
