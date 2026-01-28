@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR</title>
@@ -40,7 +42,8 @@
         a { color: var(--primary); text-decoration: none; }
         a:hover { text-decoration: underline; }
         .venue { color: var(--text-light); font-size: 1.1rem; margin-bottom: 1rem; }
-        .authors { color: var(--text-light); margin-bottom: 1.5rem; }
+        .authors { color: var(--text-light); margin-bottom: 0.25rem; }
+        .affiliations { color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem; }
         .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
         .links a {
             display: inline-flex;
@@ -66,13 +69,14 @@
     <h1>PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR</h1>
     <p class="venue">EACL 2026 (European Chapter of the Association for Computational Linguistics)</p>
     <p class="authors">
-        <a href="https://jmhb0.github.io">James Burgess</a>, <a href="https://bsky.app/profile/hansenjn.bsky.social">Jan Niklas Hansen</a>, <a href="https://duopeng.github.io/">Duo Peng</a>, <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang</a>, <a href="https://alejandro-lozano-dev.github.io/alejandro/">Alejandro Lozano</a>, <a href="https://minwoosun.github.io/">Min Woo Sun</a>, <a href="https://lundberglab.stanford.edu">Emma Lundberg</a>, <a href="https://ai.stanford.edu/~syyeung/">Serena Yeung-Levy</a>
+        <a href="https://jmhb0.github.io">James Burgess</a><sup>1</sup>, <a href="https://bsky.app/profile/hansenjn.bsky.social">Jan Niklas Hansen</a><sup>1</sup>, <a href="https://duopeng.github.io/">Duo Peng</a><sup>2</sup>, <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang</a><sup>1</sup>, <a href="https://alejandro-lozano-dev.github.io/alejandro/">Alejandro Lozano</a><sup>1</sup>, <a href="https://minwoosun.github.io/">Min Woo Sun</a><sup>1</sup>, <a href="https://lundberglab.stanford.edu">Emma Lundberg</a><sup>1,2,3</sup>, <a href="https://ai.stanford.edu/~syyeung/">Serena Yeung-Levy</a><sup>1,2</sup>
     </p>
+    <p class="affiliations"><sup>1</sup>Stanford University, <sup>2</sup>Chan Zuckerberg Biohub Network, <sup>3</sup>KTH Royal Institute of Technology</p>
 
     <div class="links">
-        <a href="https://arxiv.org/abs/2601.18207">Paper</a>
-        <a href="https://github.com/jmhb0/PaperSearchQA">Code</a>
-        <a href="https://huggingface.co/collections/jmhb/papersearchqa">Dataset</a>
+        <a href="https://arxiv.org/abs/2601.18207"><i class="ai ai-arxiv"></i> Paper</a>
+        <a href="https://github.com/jmhb0/PaperSearchQA"><i class="fab fa-github"></i> Code</a>
+        <a href="https://huggingface.co/collections/jmhb/papersearchqa"><i class="fas fa-database"></i> Datasets</a>
     </div>
 
     <div class="tldr">
