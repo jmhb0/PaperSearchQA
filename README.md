@@ -124,10 +124,37 @@ If you use the Search-R1 retrieval infrastructure, also cite:
 }
 ```
 
+And if you use the BioASQ datasets then please cite 
+```bibtex
+@article{krithara2023bioasq,
+  title={BioASQ-QA: A manually curated corpus for Biomedical Question Answering},
+  author={Krithara, Anastasia and Nentidis, Anastasios and Bougiatiotis, Konstantinos and Paliouras, Georgios},
+  journal={Scientific Data},
+  volume={10},
+  number={1},
+  pages={170},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{tsatsaronis2015overview,
+  title={An overview of the BIOASQ large-scale biomedical semantic indexing and question answering competition},
+  author={Tsatsaronis, George and Balikas, Georgios and Malakasiotis, Prodromos and Partalas, Ioannis and Zschunke, Matthias and Alvers, Michael R and Weissenborn, Dirk and Krithara, Anastasia and Petridis, Sergios and Polychronopoulos, Dimitris and others},
+  journal={BMC bioinformatics},
+  volume={16},
+  number={1},
+  pages={138},
+  year={2015},
+  publisher={Springer}
+}
+```
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details. The PubMed corpus is derived from allMeSH (BioASQ 2022). BioASQ evaluation data requires registration at http://bioasq.org/.
 
 ## Acknowledgments
 
-Retrieval infrastructure adapted from [Search-R1](https://github.com/PeterGriffinJin/Search-R1). Corpus based on PubMed abstracts and BioASQ challenge data.
+Retrieval infrastructure adapted from [Search-R1](https://github.com/PeterGriffinJin/Search-R1). Corpus based on PubMed abstracts and [BioASQ challenge](https://bioasq.org/) data.
+
+
