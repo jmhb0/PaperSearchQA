@@ -224,6 +224,16 @@ The cache contains API responses that cost money to generate. It enables:
 - **Speed**: Instant retrieval for cached prompts
 - **Reproducibility**: Same inputs always return same outputs
 
+### Extracting the Cache
+
+The repository includes `cache.tar.gz` with pre-cached LLM responses. Extract it before running data generation:
+
+```bash
+tar -xzvf cache.tar.gz
+```
+
+This will create the `cache/` directory with the LMDB cache files, significantly reducing API costs when running the pipeline.
+
 ## Usage Examples
 
 ### Generate PaperSearchQA Dataset

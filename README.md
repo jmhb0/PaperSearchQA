@@ -34,7 +34,14 @@ The generated data is available on HuggingFace:
 from datasets import load_dataset
 
 # Load training and test sets
-dataset = load_dataset("PaperSearchQA/PaperSearchQA")
+dataset = load_dataset("jmhb/PaperSearchQA")
+```
+
+We also re-release the [BioASQ](http://bioasq.org/) data on HuggingFace, which is a good test of generalization (please cite them if you use it):
+
+```python
+# Load BioASQ factoid questions for out-of-distribution evaluation
+bioasq = load_dataset("jmhb/BioASQ", "factoid")
 ```
 
 ## Data Generation Pipeline
