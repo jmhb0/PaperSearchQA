@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/arXiv-2601.18207-b31b1b)](https://arxiv.org/abs/2601.18207)
 [![Website](https://img.shields.io/badge/Website-jmhb0.github.io-blue)](https://jmhb0.github.io/PaperSearchQA/)
-[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow)](https://huggingface.co/datasets/jmhb/PaperSearchQA)
+[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow)]([https://huggingface.co/datasets/jmhb/PaperSearchQA](https://huggingface.co/collections/jmhb/papersearchqa))
 
 **[EACL 2026]** A reinforcement learning environment for training AI agents to autonomously search and reason over scientific literature.
 
