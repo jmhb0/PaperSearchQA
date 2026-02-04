@@ -80,7 +80,7 @@
     </div>
 
     <div class="tldr">
-        We provide an environment for training search agents over scientific literature using reinforcement learning with verifiable rewards (RLVR). We release a corpus of <strong>16 million biomedical abstracts</strong>, a <strong>60k QA dataset</strong>, and benchmarks &mdash; all compatible with the Search-R1 codebase. Our data creation methods are scalable and easily extendable to other scientific domains.
+        We release an environment for training search agents over scientific literature using reinforcement learning with verifiable rewards (RLVR). We release a corpus of <strong>16 million biomedical abstracts</strong>, a <strong>60k QA dataset</strong>, and benchmarks &mdash; all compatible with the Search-R1 codebase. Our data creation methods are scalable and easily extendable to other scientific domains.
     </div>
 
     <h2>Search Agents</h2>
@@ -103,9 +103,15 @@
     </ul>
 
     <h3>Data Creation Pipeline</h3>
-    <p>We also release a generalizable data creation pipeline for constructing QA training data from paper abstracts. It requires only a corpus of abstracts and access to an LLM, plus domain expertise to define meaningful question categories, making it straightforward to build similar RLVR training environments for other scientific domains.</p>
+    <p>We also release a data creation pipeline for constructing QA training data from paper abstracts. It requires only a corpus of abstracts and access to an LLM.</p>
     <div class="figure">
         <img src="assets/papersearchqa-fig3-datageneration.png" alt="Data generation pipeline">
+    </div>
+
+    <h3>Question Categories</h3>
+    <p>Our question categories were defined with domain experts in biomedicine. To extend this pipeline to other fields, define new categories relevant to your domain.</p>
+    <div class="figure">
+        <img src="assets/papersearchqa-fig-categories.png" alt="Question categories">
     </div>
 
     <h2>Results</h2>
